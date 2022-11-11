@@ -1,7 +1,3 @@
-// -----------------------------------------------------------------------------
-// This file contains very basic styles.
-// -----------------------------------------------------------------------------
-
 /**
  * Set up a decent box model on the root element
  */
@@ -22,12 +18,28 @@ html {
 }
 
 /**
+ * Basic typography style for text
+ */
+ body {
+  color: $text-color;
+  font-family: $text-font-aleo;
+}
+
+/**
  * Basic styles for links
  */
 a {
   color: $text-color;
   text-decoration: none;
 
+  @include on-event {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.highlighted-link {
+  font-weight: 700;
   @include on-event {
     color: $text-color;
     text-decoration: underline;

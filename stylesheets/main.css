@@ -328,6 +328,14 @@ html {
 }
 
 /**
+ * Basic typography style for text
+ */
+body {
+  color: rgb(13, 96, 111);
+  font-family: "Aleo", serif;
+}
+
+/**
  * Basic styles for links
  */
 a {
@@ -335,16 +343,16 @@ a {
   text-decoration: none;
 }
 a:hover, a:active, a:focus, a:focus-within {
-  color: rgb(13, 96, 111);
   text-decoration: underline;
+  cursor: pointer;
 }
 
-/**
- * Basic typography style for copy text
- */
-body {
+.highlighted-link {
+  font-weight: 700;
+}
+.highlighted-link:hover, .highlighted-link:active, .highlighted-link:focus, .highlighted-link:focus-within {
   color: rgb(13, 96, 111);
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-decoration: underline;
 }
 
 /**
@@ -366,21 +374,8 @@ body {
   max-width: 1200px; /* 1 */
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
-  padding-left: 20px; /* 3 */
-  padding-right: 20px; /* 3 */
+  padding: 0;
   width: 100%; /* 1 */
-}
-
-/**
- * Hide text while making it readable for screen readers
- * 1. Needed in WebKit-based browsers because of an implementation bug;
- *    See: https://code.google.com/p/chromium/issues/detail?id=457146
- */
-.hide-text {
-  overflow: hidden;
-  padding: 0; /* 1 */
-  text-indent: 101%;
-  white-space: nowrap;
 }
 
 /**
@@ -397,4 +392,61 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header {
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.header__logo span {
+  font-family: "Magra", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: rgb(255, 255, 255);
+}
+
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.nav__el {
+  margin-right: 42px;
+}
+.nav__el a {
+  color: rgb(255, 255, 255);
+}
+
+.login-button {
+  width: 103px;
+  height: 41px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.button {
+  background-color: rgb(13, 96, 111);
+  color: rgb(255, 255, 255);
+  border: 0;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  padding: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -1,20 +1,12 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------
-
-
-
-
-
-/// Regular font family
+/// Fonts
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-aleo: 'Aleo', serif;
 
-/// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$text-font-redhat: 'Red Hat Text', sans-serif;
 
-
+/// @type List
+$text-font-magra: 'Magra', sans-serif;
 
 
 
@@ -31,11 +23,10 @@ $brand-color: rgba(242, 120, 92, 1) !default;
 $white: rgba(255, 255, 255, 1) !default;
 
 
+
 /// Container's maximum width
 /// @type Length
 $max-width: 1200px !default;
-
-
 
 
 
