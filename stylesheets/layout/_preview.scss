@@ -1,0 +1,27 @@
+.preview {
+  background: url(../images/preview-bg.jpg) no-repeat;
+  height: 765px;
+}
+
+.plan-your-trip {
+  margin-top: 25px;
+  width: 892px;
+
+  & h1 {
+    color: $white;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    margin: 0;
+    padding: 0;
+  }
+
+  & p {
+    font-style: italic;
+    color: $white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 56px auto 46px auto;
+  }
+}

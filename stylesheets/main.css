@@ -374,7 +374,6 @@ a:hover, a:active, a:focus, a:focus-within {
   max-width: 1200px; /* 1 */
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
-  padding: 0;
   width: 100%; /* 1 */
 }
 
@@ -425,19 +424,36 @@ a:hover, a:active, a:focus, a:focus-within {
   padding: 0;
 }
 
-.nav__el {
-  margin-right: 42px;
-}
 .nav__el a {
+  margin-right: 42px;
   color: rgb(255, 255, 255);
+  font-family: "Red Hat Text", sans-serif;
 }
 
-.login-button {
-  width: 103px;
-  height: 41px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
+.preview {
+  background: url(../images/preview-bg.jpg) no-repeat;
+  height: 765px;
+}
+
+.plan-your-trip {
+  margin-top: 25px;
+  width: 892px;
+}
+.plan-your-trip h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  margin: 0;
+  padding: 0;
+}
+.plan-your-trip p {
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 56px auto 46px auto;
 }
 
 .button {
@@ -449,4 +465,53 @@ a:hover, a:active, a:focus, a:focus-within {
   font-family: "Red Hat Text", sans-serif;
   font-weight: 500;
   padding: auto;
+}
+
+.login-button {
+  width: 103px;
+  height: 41px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.search-field__button {
+  width: 228px;
+  height: 59px;
+  font-size: 24px;
+  line-height: 32px;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.search-field {
+  width: 892px;
+  height: 95px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.search-field__input {
+  background-color: transparent;
+  border: 0;
+  height: 59px;
+  width: 560px;
+  margin: auto 45px auto 41px;
+  font-style: "Aleo", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+.search-field__input::-moz-placeholder {
+  color: rgb(242, 120, 92);
+  font-style: italic;
+}
+.search-field__input:-ms-input-placeholder {
+  color: rgb(242, 120, 92);
+  font-style: italic;
+}
+.search-field__input::placeholder {
+  color: rgb(242, 120, 92);
+  font-style: italic;
 }/*# sourceMappingURL=main.css.map */

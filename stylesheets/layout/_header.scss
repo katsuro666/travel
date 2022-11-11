@@ -30,19 +30,9 @@
   padding: 0;
 }
 
-.nav__el {
+.nav__el a {
   margin-right: 42px;
-
-  & a {
-    color: $white;
-  }
-}
-
-.login-button {
-  width: 103px;
-  height: 41px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
+  color: $white;
+  font-family: $text-font-redhat;
 }
 

@@ -1,0 +1,25 @@
+.search-field {
+  width: 892px;
+  height: 95px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.search-field__input {
+  background-color: transparent;
+  border: 0;
+  height: 59px;
+  width: 560px;
+  margin: auto 45px auto 41px;
+  font-style: $text-font-aleo;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+
+  &::placeholder {
+    color: $brand-color;
+    font-style: italic;
+  }
+}
