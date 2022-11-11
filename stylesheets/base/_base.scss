@@ -25,6 +25,15 @@ html {
   font-family: $text-font-aleo;
 }
 
+h2 {
+  color: $brand-color;
+  font-family: $text-font-redhat;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+}
+
 /**
  * Basic styles for links
  */

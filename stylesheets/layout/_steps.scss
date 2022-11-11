@@ -1,0 +1,26 @@
+.steps {
+  margin-bottom: 92px;
+}
+
+.steps h2 {
+  text-align: center;
+  margin: 80px auto 40px auto;
+}
+
+.steps__features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps__action-ico {
+  align-self: center;
+}
+
+.steps__action {
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__action-txt {
+  margin-top: 30px;
+}

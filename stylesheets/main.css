@@ -335,6 +335,15 @@ body {
   font-family: "Aleo", serif;
 }
 
+h2 {
+  color: rgb(242, 120, 92);
+  font-family: "Red Hat Text", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+}
+
 /**
  * Basic styles for links
  */
@@ -456,6 +465,33 @@ a:hover, a:active, a:focus, a:focus-within {
   margin: 56px auto 46px auto;
 }
 
+.steps {
+  margin-bottom: 92px;
+}
+
+.steps h2 {
+  text-align: center;
+  margin: 80px auto 40px auto;
+}
+
+.steps__features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps__action-ico {
+  align-self: center;
+}
+
+.steps__action {
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__action-txt {
+  margin-top: 30px;
+}
+
 .button {
   background-color: rgb(13, 96, 111);
   color: rgb(255, 255, 255);
@@ -466,6 +502,14 @@ a:hover, a:active, a:focus, a:focus-within {
   font-weight: 500;
   padding: auto;
 }
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(242, 120, 92);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7), 0px 2px 3px rgba(13, 96, 111, 0.6);
+}
+.button:active {
+  background-color: rgb(209, 89, 62);
+}
 
 .login-button {
   width: 103px;
@@ -473,6 +517,7 @@ a:hover, a:active, a:focus, a:focus-within {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
 }
 
 .search-field__button {
