@@ -9,6 +9,7 @@
   font-size: 24px;
   line-height: 32px;
   padding: auto;
+  transition: background-color 0.5s, box-shadow 1s;
 
   &:hover {
   cursor: pointer;

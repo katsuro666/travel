@@ -9,7 +9,7 @@
   font-size: 16px;
   line-height: 21px;
   vertical-align: middle;
-  margin-left: 145px;
+  margin-left: 160px;
 
   & p {
     margin: 21px auto 19px auto;
@@ -17,13 +17,10 @@
 }
 
 .footer__socials {
-  margin: 14px 0 0px;
+  margin-top: 14px;
+}
 
-  & object {
-    margin-right: 20px;
-
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
+.socials__icon img {
+  outline: 3px solid red;
+  margin: 0 0 auto 20px; 
 }

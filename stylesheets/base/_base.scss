@@ -45,15 +45,15 @@ a {
   text-decoration: none;
 
   @include on-event {
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
   }
 }
 
 .highlighted-link {
   font-weight: 700;
+  text-decoration: underline;
   @include on-event {
     color: $text-color;
-    text-decoration: underline;
   }
 }

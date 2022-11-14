@@ -354,16 +354,16 @@ a {
   text-decoration: none;
 }
 a:hover, a:active, a:focus, a:focus-within {
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .highlighted-link {
   font-weight: 700;
+  text-decoration: underline;
 }
 .highlighted-link:hover, .highlighted-link:active, .highlighted-link:focus, .highlighted-link:focus-within {
   color: rgb(13, 96, 111);
-  text-decoration: underline;
 }
 
 /**
@@ -441,6 +441,28 @@ a:hover, a:active, a:focus, a:focus-within {
   font-family: "Red Hat Text", sans-serif;
 }
 
+.nav__el a {
+  position: relative;
+}
+.nav__el a::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 0px;
+  transition: width 0.4s ease-out, height 0.4s ease;
+}
+.nav__el a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
 .preview {
   background: url(../images/preview-bg.jpg) no-repeat center;
   background-size: cover;
@@ -506,7 +528,6 @@ a:hover, a:active, a:focus, a:focus-within {
 }
 
 .destinations__carousel {
-  outline: 3px solid red;
   display: flex;
   justify-content: space-around;
   overflow-x: hidden;
@@ -618,20 +639,19 @@ a:hover, a:active, a:focus, a:focus-within {
   font-size: 16px;
   line-height: 21px;
   vertical-align: middle;
-  margin-left: 145px;
+  margin-left: 160px;
 }
 .footer__rights p {
   margin: 21px auto 19px auto;
 }
 
 .footer__socials {
-  margin: 14px 0 0px;
+  margin-top: 14px;
 }
-.footer__socials object {
-  margin-right: 20px;
-}
-.footer__socials object:last-child {
-  margin-right: 0px;
+
+.socials__icon img {
+  outline: 3px solid red;
+  margin: 0 0 auto 20px;
 }
 
 .button {
@@ -645,6 +665,7 @@ a:hover, a:active, a:focus, a:focus-within {
   font-size: 24px;
   line-height: 32px;
   padding: auto;
+  transition: background-color 0.5s, box-shadow 1s;
 }
 .button:hover {
   cursor: pointer;
@@ -703,6 +724,7 @@ a:hover, a:active, a:focus, a:focus-within {
 
 .search-field__input {
   background-color: transparent;
+  color: rgb(242, 120, 92);
   border: 0;
   height: 59px;
   width: 560px;
@@ -711,16 +733,36 @@ a:hover, a:active, a:focus, a:focus-within {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
+  border-radius: 16px;
+  transition: background-color 2s;
+  font-style: italic;
+  transition: color 2s, font-style 3s;
 }
 .search-field__input::-moz-placeholder {
   color: rgb(242, 120, 92);
-  font-style: italic;
+  -moz-transition: color 2s, font-style 3s;
+  transition: color 2s, font-style 3s;
 }
 .search-field__input:-ms-input-placeholder {
   color: rgb(242, 120, 92);
-  font-style: italic;
+  -ms-transition: color 2s, font-style 3s;
+  transition: color 2s, font-style 3s;
 }
 .search-field__input::placeholder {
   color: rgb(242, 120, 92);
-  font-style: italic;
+  transition: color 2s, font-style 3s;
+}
+.search-field__input:focus {
+  background-color: rgba(13, 96, 111, 0.5);
+  color: rgb(255, 255, 255);
+  font-style: normal;
+}
+.search-field__input:focus::-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
+.search-field__input:focus:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+.search-field__input:focus::placeholder {
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=main.css.map */
