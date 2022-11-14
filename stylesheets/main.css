@@ -636,6 +636,7 @@ a:hover, a:active, a:focus, a:focus-within {
 .footer__rights {
   color: rgb(255, 255, 255);
   font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   vertical-align: middle;
@@ -690,10 +691,105 @@ a:hover, a:active, a:focus, a:focus-within {
   padding: 7.5px;
 }
 
+.login {
+  width: 650px;
+  height: 660px;
+  background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 25px 45px;
+}
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 560px;
+  height: 610px;
+}
+
+.popup-header {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  margin: 0 auto 30px auto;
+}
+
+.login__socials {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__or {
+  position: relative;
+  margin: 30px auto 10px auto;
+  color: rgba(13, 96, 111, 0.5);
+}
+.login__or::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 28px;
+  width: 261px;
+  height: 1px;
+  background-color: rgba(13, 96, 111, 0.5);
+}
+.login__or::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 28px;
+  width: 261px;
+  height: 1px;
+  background-color: rgba(13, 96, 111, 0.5);
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+}
+.popup__form input {
+  margin: 5px auto 20px auto;
+  width: 560px;
+  height: 54px;
+  background: #FFFFFF;
+  box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  color: rgb(13, 96, 111);
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+}
+
+.popup__form-forgot {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.popup-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(13, 96, 111, 0.5);
+  margin: 26px 0 20px;
+}
+
+.popup__prompt {
+  text-align: center;
+  color: rgba(13, 96, 111, 0.5);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+
 .button {
   background-color: rgb(13, 96, 111);
   color: rgb(255, 255, 255);
-  border: 0;
+  border: none;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   font-family: "Red Hat Text", sans-serif;
@@ -747,6 +843,74 @@ a:hover, a:active, a:focus, a:focus-within {
 .travel-stories__button {
   width: 228px;
   height: 59px;
+}
+
+.login__socials-button {
+  display: flex;
+  width: 560px;
+  height: 56px;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+.login__socials-button span {
+  margin: auto auto auto 0;
+}
+
+.login__socials-button--fb {
+  background: #1877f2;
+  margin-bottom: 20px;
+  border: none;
+}
+.login__socials-button--fb:active {
+  border: 4px solid rgba(24, 30, 242, 0.3);
+  border-radius: 10px;
+}
+.login__socials-button--fb:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login__socials-button--google {
+  background: #FFFFFF;
+  border: none;
+  color: rgb(13, 96, 111);
+}
+.login__socials-button--google:active {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.login__socials-button--google:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login__fb-ico {
+  background: url(../icons/login__ico--fb.svg);
+  width: 23px;
+  height: 23px;
+  margin: auto 15.5px auto auto;
+}
+
+.login__google-ico {
+  background: url(../icons/login__ico--google.svg);
+  width: 23px;
+  height: 23px;
+  margin: auto 15.5px auto auto;
+}
+
+.popup__form-button {
+  margin: 5px 0 10px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  width: 560px;
+  height: 54px;
 }
 
 .search-field {
