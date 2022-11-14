@@ -1,0 +1,38 @@
+.burger-menu {
+  width: 165px;
+  background: $brand-color;
+  padding: 8px 0px 30px 8px;
+  box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+  border-radius: 10px;
+}
+
+.burger-menu__list {
+  margin-left: 24px;
+  margin-right: 15px;
+  padding: 0;
+}
+
+.burger-menu__el {
+  list-style: none;
+  margin-bottom: 10px;
+  text-align: right;
+
+  & a {
+    color: $white;
+    font-family: $text-font-redhat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.burger-menu__cross {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  & img {
+    padding: 7.5px;
+  }
+}

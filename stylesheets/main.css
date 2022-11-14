@@ -650,8 +650,44 @@ a:hover, a:active, a:focus, a:focus-within {
 }
 
 .socials__icon img {
-  outline: 3px solid red;
   margin: 0 0 auto 20px;
+}
+
+.burger-menu {
+  width: 165px;
+  background: rgb(242, 120, 92);
+  padding: 8px 0px 30px 8px;
+  box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+  border-radius: 10px;
+}
+
+.burger-menu__list {
+  margin-left: 24px;
+  margin-right: 15px;
+  padding: 0;
+}
+
+.burger-menu__el {
+  list-style: none;
+  margin-bottom: 10px;
+  text-align: right;
+}
+.burger-menu__el a {
+  color: rgb(255, 255, 255);
+  font-family: "Red Hat Text", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.burger-menu__cross {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.burger-menu__cross img {
+  padding: 7.5px;
 }
 
 .button {
@@ -734,9 +770,8 @@ a:hover, a:active, a:focus, a:focus-within {
   font-size: 24px;
   line-height: 29px;
   border-radius: 16px;
-  transition: background-color 2s;
   font-style: italic;
-  transition: color 2s, font-style 3s;
+  transition: background-color 2s, color 2s, font-style 5s;
 }
 .search-field__input::-moz-placeholder {
   color: rgb(242, 120, 92);
@@ -755,7 +790,6 @@ a:hover, a:active, a:focus, a:focus-within {
 .search-field__input:focus {
   background-color: rgba(13, 96, 111, 0.5);
   color: rgb(255, 255, 255);
-  font-style: normal;
 }
 .search-field__input:focus::-moz-placeholder {
   color: rgb(255, 255, 255);

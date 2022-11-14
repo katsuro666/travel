@@ -154,13 +154,13 @@
 
       <div class="destinations__arrows visually-hidden">
         <img
-          src="icons/arrow-left__destinations.png"
+          src="icons/destinations__arrow-left.svg"
           alt=""
           class="arrow-left--mobile" />
         <img
-          src="icons/arrow-right__destinations.png"
+          src="icons/destinations__arrow-right.svg"
           alt=""
-          class="arrow-left--mobile" />
+          class="arrow-right--mobile" />
       </div>
     </section>
 
@@ -261,7 +261,7 @@
       </section>
 
       <div class="container">
-        <footer class="footer">
+        <footer class="footer" id="footer">
           <div class="footer__space"></div>
 
           <div class="footer__rights">
@@ -269,15 +269,15 @@
           </div>
 
           <div class="footer__socials">
-            <a href="" class="socials__icon">
+            <a href="https://www.instagram.com" class="socials__icon">
               <img src="icons/ico-instagram.svg" />
             </a>
 
-            <a href="" class="socials__icon">
+            <a href="https://www.youtube.com" class="socials__icon">
               <img src="icons/ico-youtube.svg" />
             </a>
 
-            <a href="" class="socials__icon">
+            <a href="https://www.twitter.com" class="socials__icon">
               <img src="icons/ico-twitter.svg" />
             </a>
           </div>
@@ -285,15 +285,21 @@
       </div>
     </div>
 
-    <div class="burger-menu visually-hidden">
-      <div class="burger-menu__cross"></div>
-      <ul>
-        <li class="burger-menu__el"><a href="#">How It Works</a></li>
-        <li class="burger-menu__el"><a href="#">Plan Your Trip</a></li>
-        <li class="burger-menu__el"><a href="#">Destinations</a></li>
-        <li class="burger-menu__el"><a href="#">Travel Stories</a></li>
+    <div class="burger-menu">
+      <div class="burger-menu__cross">
+        <img src="icons/burger-cross.svg" alt="" />
+      </div>
+      <ul class="burger-menu__list">
+        <li class="burger-menu__el"><a href="#steps">How It Works</a></li>
+        <li class="burger-menu__el"><a href="#plan">Plan Your Trip</a></li>
+        <li class="burger-menu__el">
+          <a href="#destinations">Destinations</a>
+        </li>
+        <li class="burger-menu__el">
+          <a href="#travel-stories">Travel Stories</a>
+        </li>
         <li class="burger-menu__el"><a href="#">Account</a></li>
-        <li class="burger-menu__el"><a href="#">Social Media</a></li>
+        <li class="burger-menu__el"><a href="#footer">Social Media</a></li>
       </ul>
     </div>
 
