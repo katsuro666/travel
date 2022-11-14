@@ -23,6 +23,7 @@ html {
  body {
   color: $text-color;
   font-family: $text-font-aleo;
+  overflow-x: hidden;
 }
 
 h2 {

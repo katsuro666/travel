@@ -1,0 +1,51 @@
+.destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destinations h2 {
+  margin: 0 auto 46px auto;
+}
+
+.destinations__carousel {
+  outline: 3px solid red;
+  display: flex;
+  justify-content: space-around;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.carousel__el {
+  position: relative;
+  margin-right: 60px;
+  
+  & img {
+    border-radius: 16px;
+    width: 800px;
+    height: 800px;    
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.carousel__el span {
+  position: absolute;
+  left: 15px;
+  bottom: 40px;
+  text-transform: uppercase;
+  color: $white;
+  font-family: $text-font-redhat;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.destinations__pagination {
+  margin: 24px auto 40px;
+}
+
+.pagination__dot {
+  margin-right: 10px;
+}

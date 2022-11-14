@@ -1,0 +1,53 @@
+.stories-footer__bg {
+  background: url(../images/stories-bg.jpg) no-repeat;
+}
+
+.travel-stories {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 40px;
+  
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.stories__list {
+  padding: 40px 0;
+}
+
+.travel-stories__header {
+  text-align: center;
+  margin: 80px auto 40px;
+}
+
+.story {
+  display: flex;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.story__heading {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  margin: 0 auto 24px 0;
+}
+
+.story__text {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.story__img {
+  width: 400px;
+  height: 250px;
+  filter: drop-shadow(0px 4px 4px #0D606F);
+  border-radius: 16px;
+  margin-right: 40px;
+}

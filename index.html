@@ -85,7 +85,6 @@
 
     <div class="container">
       <section class="steps">
-        
         <h2>3 steps to the perfect trip</h2>
 
         <div class="steps__features">
@@ -111,15 +110,29 @@
       <h2>Popular destinations</h2>
 
       <div class="destinations__carousel">
-        <img src="images/Spain.jpg" alt="Sea of Spain" class="carousel__img" />
-        <img
-          src="images/Japan.jpg"
-          alt="Japan landscapes"
-          class="carousel__img" />
-        <img
-          src="images/USA.jpg"
-          alt="The Golden Gate bridge"
-          class="carousel__img" />
+        <div class="carousel__el">
+          <img
+            src="images/Spain.jpg"
+            alt="Sea of Spain"
+            class="carousel__img" />
+          <span>Spain</span>
+        </div>
+
+        <div class="carousel__el">
+          <img
+            src="images/Japan.jpg"
+            alt="Japan landscapes"
+            class="carousel__img" />
+          <span>Japan</span>
+        </div>
+
+        <div class="carousel__el">
+          <img
+            src="images/USA.jpg"
+            alt="The Golden Gate bridge"
+            class="carousel__img" />
+          <span>USA</span>
+        </div>
       </div>
 
       <div class="destinations__pagination">
@@ -129,10 +142,12 @@
       </div>
 
       <button class="button destinations__button">
-        <object type="image/svg+xml" data="icons/arrow-right.svg">
-          <img src="icons/arrow-right.svg" />
-        </object>
-        Find More
+        <div class="button-container">
+          <object type="image/svg+xml" data="icons/arrow-right.svg">
+            <img src="icons/arrow-right.svg" />
+          </object>
+          <p>Find More</p>
+        </div>
       </button>
 
       <div class="destinations__arrows visually-hidden">
@@ -147,7 +162,7 @@
       </div>
     </section>
 
-    <h2>Travel Stories</h2>
+    <h2 class="travel-stories__header">Travel Stories</h2>
 
     <div class="stories-footer__bg">
       <section class="travel-stories">
@@ -155,84 +170,96 @@
           <div class="stories__list">
             <div class="story">
               <img src="images/story-thailand.jpg" alt="" class="story__img" />
-              <h3 class="story__heading">10 Photos of Attractive Thailand</h3>
-              <p class="story__content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est
-                laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit...
-                <a class="highlighted-link">Read More</a>
-              </p>
+              <div class="story__content">
+                <h3 class="story__heading">10 Photos of Attractive Thailand</h3>
+                <p class="story__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit...
+                  <a class="highlighted-link">Read More</a>
+                </p>
+              </div>
             </div>
 
             <div class="story">
               <img src="images/story-utah.jpg" alt="" class="story__img" />
-              <h3 class="story__heading">Canyonlands National Park, Utah</h3>
-              <p class="story__content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est
-                laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit...
-                <a class="highlighted-link">Read More</a>
-              </p>
+              <div class="story__content">
+                <h3 class="story__heading">Canyonlands National Park, Utah</h3>
+                <p class="story__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit...
+                  <a class="highlighted-link">Read More</a>
+                </p>
+              </div>
             </div>
 
             <div class="story">
               <img src="images/story-mountains.jpg" alt="" class="story__img" />
-              <h3 class="story__heading">I left my heart in the Mountains!</h3>
-              <p class="story__content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est
-                laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit...
-                <a class="highlighted-link">Read More</a>
-              </p>
+              <div class="story__content">
+                <h3 class="story__heading">
+                  I left my heart in the Mountains!
+                </h3>
+                <p class="story__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit...
+                  <a class="highlighted-link">Read More</a>
+                </p>
+              </div>
             </div>
 
             <div class="story">
               <img src="images/story-journey.jpg" alt="" class="story__img" />
-              <h3 class="story__heading">The Longest journey in my life!</h3>
-              <p class="story__content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est
-                laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit...
-                <a class="highlighted-link">Read More</a>
-              </p>
+              <div class="story__content">
+                <h3 class="story__heading">The Longest journey in my life!</h3>
+                <p class="story__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit...
+                  <a class="highlighted-link">Read More</a>
+                </p>
+              </div>
             </div>
           </div>
 
           <button class="button travel-stories__button">
-            <object type="image/svg+xml" data="icons/arrow-right.svg">
-              <img src="icons/arrow-right.svg" />
-            </object>
-            See More
+            <div class="button-container">
+              <object type="image/svg+xml" data="icons/arrow-right.svg">
+                <img src="icons/arrow-right.svg" />
+              </object>
+              <p>See More</p>
+            </div>
           </button>
         </div>
       </section>
 
-      <footer class="footer">
-        <div class="container">
+      <div class="container">
+        <footer class="footer">
           <div class="footer__space"></div>
 
           <div class="footer__rights">All Rights Reserved © Travel Portal</div>
@@ -250,8 +277,8 @@
               <img src="icons/ico-twitter.svg" />
             </object>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
 
     <div class="burger-menu visually-hidden">

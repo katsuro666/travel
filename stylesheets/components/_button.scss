@@ -6,6 +6,8 @@
   border-radius: 10px;
   font-family: $text-font-redhat;
   font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
   padding: auto;
 
   &:hover {
@@ -34,4 +36,26 @@
   font-size: 24px;
   line-height: 32px;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.destinations__button {
+  width: 228px;
+  height: 59px;
+}
+
+.button-container {
+  display :flex;
+  
+  & object {
+    margin: 9.5px 10px 9.5px 26px;
+  }
+
+  & p {
+    margin: 13.5px auto 13.5px 0;
+  }
+}
+
+.travel-stories__button {
+  width: 228px;
+  height: 59px;
 }
