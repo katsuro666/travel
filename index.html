@@ -49,10 +49,12 @@
 
           <nav class="header__nav">
             <ul>
-              <li class="nav__el"><a href="#">How It Works</a></li>
-              <li class="nav__el"><a href="#">Plan Your Trip</a></li>
-              <li class="nav__el"><a href="#">Destinations</a></li>
-              <li class="nav__el"><a href="#">Travel Stories</a></li>
+              <li class="nav__el"><a href="#steps">How It Works</a></li>
+              <li class="nav__el"><a href="#plan">Plan Your Trip</a></li>
+              <li class="nav__el"><a href="#destinations">Destinations</a></li>
+              <li class="nav__el">
+                <a href="#travel-stories">Travel Stories</a>
+              </li>
             </ul>
           </nav>
 
@@ -63,7 +65,7 @@
       </header>
 
       <div class="container">
-        <div class="plan-your-trip">
+        <div class="plan-your-trip" id="plan">
           <h1>Explore the beauty of the World</h1>
 
           <p>
@@ -84,7 +86,7 @@
     </section>
 
     <div class="container">
-      <section class="steps">
+      <section class="steps" id="steps">
         <h2>3 steps to the perfect trip</h2>
 
         <div class="steps__features">
@@ -106,7 +108,7 @@
       </section>
     </div>
 
-    <section class="destinations">
+    <section class="destinations" id="destinations">
       <h2>Popular destinations</h2>
 
       <div class="destinations__carousel">
@@ -136,9 +138,9 @@
       </div>
 
       <div class="destinations__pagination">
-        <img src="icons/pagination.png" alt="" class="pagination__dot" />
-        <img src="icons/pagination.png" alt="" class="pagination__dot" />
-        <img src="icons/pagination.png" alt="" class="pagination__dot" />
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot pagination__dot--current"></div>
+        <div class="pagination__dot"></div>
       </div>
 
       <button class="button destinations__button">
@@ -165,7 +167,7 @@
     <h2 class="travel-stories__header">Travel Stories</h2>
 
     <div class="stories-footer__bg">
-      <section class="travel-stories">
+      <section class="travel-stories" id="travel-stories">
         <div class="container">
           <div class="stories__list">
             <div class="story">
@@ -262,7 +264,9 @@
         <footer class="footer">
           <div class="footer__space"></div>
 
-          <div class="footer__rights">All Rights Reserved © Travel Portal</div>
+          <div class="footer__rights">
+            <p>All Rights Reserved © Travel Portal</p>
+          </div>
 
           <div class="footer__socials">
             <object type="image/svg+xml" data="icons/ico-instagram.svg">

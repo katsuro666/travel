@@ -313,6 +313,7 @@ template {
  */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /**
@@ -442,6 +443,7 @@ a:hover, a:active, a:focus, a:focus-within {
 
 .preview {
   background: url(../images/preview-bg.jpg) no-repeat center;
+  background-size: cover;
   height: 765px;
 }
 
@@ -537,14 +539,24 @@ a:hover, a:active, a:focus, a:focus-within {
 
 .destinations__pagination {
   margin: 24px auto 40px;
+  display: flex;
 }
 
 .pagination__dot {
   margin-right: 10px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: rgba(242, 120, 92, 0.5);
+  border-radius: 50%;
+}
+.pagination__dot--current {
+  background: rgb(242, 120, 92);
 }
 
 .stories-footer__bg {
-  background: url(../images/stories-bg.jpg) no-repeat;
+  background: url(../images/stories-bg.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .travel-stories {
@@ -593,6 +605,33 @@ a:hover, a:active, a:focus, a:focus-within {
   filter: drop-shadow(0px 4px 4px #0D606F);
   border-radius: 16px;
   margin-right: 40px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__rights {
+  color: rgb(255, 255, 255);
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  vertical-align: middle;
+  margin-left: 145px;
+}
+.footer__rights p {
+  margin: 21px auto 19px auto;
+}
+
+.footer__socials {
+  margin: 14px 0 0px;
+}
+.footer__socials object {
+  margin-right: 20px;
+}
+.footer__socials object:last-child {
+  margin-right: 0px;
 }
 
 .button {
