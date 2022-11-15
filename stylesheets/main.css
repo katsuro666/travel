@@ -388,6 +388,11 @@ a:hover, a:active, a:focus, a:focus-within {
   margin-right: auto; /* 2 */
   width: 100%; /* 1 */
 }
+@media (max-width: 390px) {
+  .container {
+    max-width: 360px;
+  }
+}
 
 /**
  * Hide element while making it readable for screen readers
@@ -407,11 +412,26 @@ a:hover, a:active, a:focus, a:focus-within {
 
 .header__burger {
   display: none;
+  background-image: url(../icons/burger-menu.svg);
+  width: 35px;
+  height: 32px;
+}
+@media (max-width: 390px) {
+  .header__burger {
+    display: block;
+  }
 }
 
 .header {
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+@media (max-width: 390px) {
+  .header {
+    background: transparent;
+    box-shadow: none;
+    padding-top: 43px;
+  }
 }
 
 .header .container {
@@ -420,6 +440,11 @@ a:hover, a:active, a:focus, a:focus-within {
   align-items: center;
   height: 90px;
 }
+@media (max-width: 390px) {
+  .header .container {
+    height: 32px;
+  }
+}
 
 .header__logo span {
   font-family: "Magra", sans-serif;
@@ -427,6 +452,17 @@ a:hover, a:active, a:focus, a:focus-within {
   font-size: 32px;
   line-height: 39px;
   color: rgb(255, 255, 255);
+}
+@media (max-width: 390px) {
+  .header__logo span {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .header__nav {
+    display: none;
+  }
 }
 
 .header__nav ul {
@@ -469,6 +505,14 @@ a:hover, a:active, a:focus, a:focus-within {
   background-size: cover;
   height: 765px;
 }
+@media (max-width: 390px) {
+  .preview {
+    background-image: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(../images/preview-bg--mobile.jpg);
+    background-size: cover;
+    height: 251px;
+    width: 390px;
+  }
+}
 
 .plan-your-trip {
   margin-top: 25px;
@@ -482,6 +526,11 @@ a:hover, a:active, a:focus, a:focus-within {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 390px) {
+  .plan-your-trip h1 {
+    display: none;
+  }
+}
 .plan-your-trip p {
   font-style: italic;
   color: rgb(255, 255, 255);
@@ -489,6 +538,17 @@ a:hover, a:active, a:focus, a:focus-within {
   font-size: 20px;
   line-height: 24px;
   margin: 56px auto 46px auto;
+}
+@media (max-width: 390px) {
+  .plan-your-trip p {
+    display: none;
+  }
+}
+@media (max-width: 390px) {
+  .plan-your-trip {
+    width: 360px;
+    margin-top: 67px;
+  }
 }
 
 .steps {
@@ -522,6 +582,11 @@ a:hover, a:active, a:focus, a:focus-within {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 390px) {
+  .destinations {
+    display: none;
+  }
 }
 
 .destinations h2 {
@@ -589,6 +654,11 @@ a:hover, a:active, a:focus, a:focus-within {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 390px) {
+  .travel-stories {
+    display: none;
+  }
 }
 
 .stories__list {
@@ -843,6 +913,14 @@ a:hover, a:active, a:focus, a:focus-within {
 .button:active {
   background-color: rgb(209, 89, 62);
 }
+@media (max-width: 390px) {
+  .button {
+    width: 92px;
+    height: 30px;
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
 
 .login-button {
   width: 103px;
@@ -852,6 +930,11 @@ a:hover, a:active, a:focus, a:focus-within {
   line-height: 21px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
 }
+@media (max-width: 390px) {
+  .login-button {
+    display: none;
+  }
+}
 
 .search-field__button {
   width: 228px;
@@ -859,6 +942,16 @@ a:hover, a:active, a:focus, a:focus-within {
   font-size: 24px;
   line-height: 32px;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+@media (max-width: 390px) {
+  .search-field__button {
+    width: 140px;
+    height: 30px;
+    font-size: 11px;
+    line-height: 15px;
+    padding: none;
+    margin-right: 9px;
+  }
 }
 
 .destinations__button {
@@ -957,6 +1050,12 @@ a:hover, a:active, a:focus, a:focus-within {
   display: flex;
   align-items: center;
 }
+@media (max-width: 390px) {
+  .search-field {
+    width: 360px;
+    height: 48px;
+  }
+}
 
 .search-field__input {
   background-color: transparent;
@@ -999,4 +1098,13 @@ a:hover, a:active, a:focus, a:focus-within {
 }
 .search-field__input:focus::placeholder {
   color: rgb(255, 255, 255);
+}
+@media (max-width: 390px) {
+  .search-field__input {
+    width: 360px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 17px;
+    margin: auto 16px;
+  }
 }/*# sourceMappingURL=main.css.map */

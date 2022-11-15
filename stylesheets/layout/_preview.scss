@@ -2,6 +2,13 @@
   background: url(../images/preview-bg.jpg) no-repeat center;
   background-size: cover;
   height: 765px;
+
+  @media (max-width: $mobile-width) {
+    background-image: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(../images/preview-bg--mobile.jpg);
+    background-size: cover;
+    height: 251px;
+    width: 390px;
+  }
 }
 
 .plan-your-trip {
@@ -15,6 +22,10 @@
     line-height: 96px;
     margin: 0;
     padding: 0;
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
   }
 
   & p {
@@ -24,5 +35,14 @@
     font-size: 20px;
     line-height: 24px;
     margin: 56px auto 46px auto;
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 360px;
+    margin-top: 67px;
   }
 }

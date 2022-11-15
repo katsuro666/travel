@@ -5,6 +5,11 @@
   border-radius: 16px;
   display: flex;
   align-items: center;
+
+  @media (max-width: $mobile-width) {
+    width: 360px;
+    height: 48px;
+  }
 }
 
 .search-field__input {
@@ -22,7 +27,6 @@
   font-style: italic;
   transition: background-color 2s, color 2s, font-style 5s;
 
-
   &::placeholder {
     color: $brand-color;
     transition: color 2s, font-style 3s;
@@ -35,5 +39,13 @@
     &::placeholder {
       color: $white;
     }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 360px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 17px;
+    margin: auto 16px;
   }
 }
