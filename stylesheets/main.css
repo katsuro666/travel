@@ -552,41 +552,72 @@ a:hover, a:active, a:focus, a:focus-within {
 }
 
 .steps {
-  margin-bottom: 92px;
+  margin-bottom: 97px;
+}
+@media (max-width: 390px) {
+  .steps {
+    margin-bottom: 20px;
+  }
 }
 
 .steps h2 {
   text-align: center;
   margin: 80px auto 40px auto;
 }
+@media (max-width: 390px) {
+  .steps h2 {
+    margin: 20px auto;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
 
 .steps__features {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 390px) {
+  .steps__features {
+    justify-content: right;
+  }
+}
 
 .steps__action-ico {
   align-self: center;
+}
+@media (max-width: 390px) {
+  .steps__action-ico {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .steps__action {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 390px) {
+  .steps__action {
+    width: 120px;
+  }
+}
 
 .steps__action-txt {
   margin-top: 30px;
+}
+@media (max-width: 390px) {
+  .steps__action-txt {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 
 .destinations {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-@media (max-width: 390px) {
-  .destinations {
-    display: none;
-  }
 }
 
 .destinations h2 {

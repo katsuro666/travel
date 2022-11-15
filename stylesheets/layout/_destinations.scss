@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
 }
 
 .destinations h2 {
