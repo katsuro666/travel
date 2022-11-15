@@ -10,10 +10,18 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   padding: 25px 45px;
+
+  @media (max-width: $mobile-width) {
+    width: 300px;
+    height: 350px;
+    margin-left: -150px;
+    margin-top: -175px;
+    padding: 15px 25px;
+  }
 }
 
 .signup__container {
   display: flex;
   flex-direction: column;
-  width: 560px;
+  width: 100%;
 }

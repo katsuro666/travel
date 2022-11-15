@@ -10,14 +10,21 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   padding: 25px 45px;
+
+  @media (max-width: $mobile-width) {
+    width: 300px;
+    height: 500px;
+    margin-left: -150px;
+    margin-top: -250px;
+    padding: 15px 25px;
+  }
 }
 
 .login__container {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 560px;
-  height: 610px;
+  width: 100%;
 }
 
 .popup-header {
@@ -26,11 +33,18 @@
   line-height: 38px;
   text-align: center;
   margin: 0 auto 30px auto;
+
+  @media (max-width: $mobile-width) {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
 }
 
 .login__socials {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .login__or {
@@ -46,6 +60,10 @@
     width: 261px;
     height: 1px;
     background-color: rgba(13, 96, 111, 0.5);
+
+    @media (max-width: $mobile-width) {
+      width: 105px;
+    }
   }
 
   &::after {
@@ -56,6 +74,14 @@
     width: 261px;
     height: 1px;
     background-color: rgba(13, 96, 111, 0.5);
+
+    @media (max-width: $mobile-width) {
+      width: 105px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 15px auto;
   }
 }
 
@@ -65,7 +91,7 @@
 
   & input {
     margin: 5px auto 20px auto;
-    width: 560px;
+    width: 100%;
     height: 54px;
     background: #FFFFFF;
     box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -75,6 +101,13 @@
     color: $text-color;
     font-family: $text-font-redhat;
     font-weight: 500;
+
+    @media (max-width: $mobile-width) {
+      margin: auto;
+      height: 40px;
+      padding: 1px;
+      margin-bottom: 10px;
+    }    
   }
 }
 
@@ -84,6 +117,8 @@
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
+
+  
 }
 
 .popup-line {
@@ -91,6 +126,10 @@
   height: 1px;
   background-color: rgba(13, 96, 111, 0.5);
   margin: 26px 0 20px 0;
+
+  @media (max-width: $mobile-width) {
+    margin: 10px 0;
+  }
 }
 
 .popup__prompt {

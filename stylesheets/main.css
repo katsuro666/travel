@@ -905,7 +905,7 @@ a:hover, a:active, a:focus, a:focus-within {
 }
 
 @media (max-width: 390px) {
-  .highlighted-link {
+  .story__content .highlighted-link {
     font-size: 9px;
     line-height: 11px;
   }
@@ -997,13 +997,21 @@ a:hover, a:active, a:focus, a:focus-within {
   border-radius: 16px;
   padding: 25px 45px;
 }
+@media (max-width: 390px) {
+  .login {
+    width: 300px;
+    height: 500px;
+    margin-left: -150px;
+    margin-top: -250px;
+    padding: 15px 25px;
+  }
+}
 
 .login__container {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 560px;
-  height: 610px;
+  width: 100%;
 }
 
 .popup-header {
@@ -1013,10 +1021,18 @@ a:hover, a:active, a:focus, a:focus-within {
   text-align: center;
   margin: 0 auto 30px auto;
 }
+@media (max-width: 390px) {
+  .popup-header {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
 
 .login__socials {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .login__or {
@@ -1033,6 +1049,11 @@ a:hover, a:active, a:focus, a:focus-within {
   height: 1px;
   background-color: rgba(13, 96, 111, 0.5);
 }
+@media (max-width: 390px) {
+  .login__or::before {
+    width: 105px;
+  }
+}
 .login__or::after {
   content: "";
   position: absolute;
@@ -1042,6 +1063,16 @@ a:hover, a:active, a:focus, a:focus-within {
   height: 1px;
   background-color: rgba(13, 96, 111, 0.5);
 }
+@media (max-width: 390px) {
+  .login__or::after {
+    width: 105px;
+  }
+}
+@media (max-width: 390px) {
+  .login__or {
+    margin: 15px auto;
+  }
+}
 
 .popup__form {
   display: flex;
@@ -1049,7 +1080,7 @@ a:hover, a:active, a:focus, a:focus-within {
 }
 .popup__form input {
   margin: 5px auto 20px auto;
-  width: 560px;
+  width: 100%;
   height: 54px;
   background: #FFFFFF;
   box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -1059,6 +1090,14 @@ a:hover, a:active, a:focus, a:focus-within {
   color: rgb(13, 96, 111);
   font-family: "Red Hat Text", sans-serif;
   font-weight: 500;
+}
+@media (max-width: 390px) {
+  .popup__form input {
+    margin: auto;
+    height: 40px;
+    padding: 1px;
+    margin-bottom: 10px;
+  }
 }
 
 .popup__form-forgot {
@@ -1074,6 +1113,11 @@ a:hover, a:active, a:focus, a:focus-within {
   height: 1px;
   background-color: rgba(13, 96, 111, 0.5);
   margin: 26px 0 20px 0;
+}
+@media (max-width: 390px) {
+  .popup-line {
+    margin: 10px 0;
+  }
 }
 
 .popup__prompt {
@@ -1107,11 +1151,20 @@ a:hover, a:active, a:focus, a:focus-within {
   border-radius: 16px;
   padding: 25px 45px;
 }
+@media (max-width: 390px) {
+  .signup {
+    width: 300px;
+    height: 350px;
+    margin-left: -150px;
+    margin-top: -175px;
+    padding: 15px 25px;
+  }
+}
 
 .signup__container {
   display: flex;
   flex-direction: column;
-  width: 560px;
+  width: 100%;
 }
 
 .button {
@@ -1233,7 +1286,7 @@ a:hover, a:active, a:focus, a:focus-within {
 
 .login__socials-button {
   display: flex;
-  width: 560px;
+  width: 100%;
   height: 56px;
   cursor: pointer;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -1246,6 +1299,17 @@ a:hover, a:active, a:focus, a:focus-within {
 }
 .login__socials-button span {
   margin: auto auto auto 0;
+}
+@media (max-width: 390px) {
+  .login__socials-button span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 390px) {
+  .login__socials-button {
+    height: 40px;
+  }
 }
 
 .login__socials-button--fb {
@@ -1260,6 +1324,11 @@ a:hover, a:active, a:focus, a:focus-within {
 .login__socials-button--fb:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 390px) {
+  .login__socials-button--fb {
+    margin-bottom: 15px;
+  }
 }
 
 .login__socials-button--google {
@@ -1295,8 +1364,16 @@ a:hover, a:active, a:focus, a:focus-within {
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  width: 560px;
+  width: 100%;
   height: 54px;
+}
+@media (max-width: 390px) {
+  .popup__form-button {
+    margin: 15px auto 25px;
+    font-size: 16px;
+    line-height: 21px;
+    height: 40px;
+  }
 }
 
 .search-field {
