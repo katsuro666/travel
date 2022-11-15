@@ -6,29 +6,56 @@
 
 .destinations h2 {
   margin: 0 auto 46px auto;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto 20px auto;
+    font-size: 14px;
+    line-height: 19px; 
+  }
 }
 
 .destinations__carousel {
+  position: relative;
   display: flex;
   justify-content: space-around;
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
+
+  @media (max-width: $mobile-width) {
+      width: 390px;
+    }
 }
 
 .carousel__el {
   position: relative;
   margin-right: 60px;
-  
+  width: 800px;
+  height: 800px;    
+
   & img {
     border-radius: 16px;
-    width: 800px;
-    height: 800px;    
   }
 
-  &:last-child {
-    margin-right: 0;
+  &:nth-child(1) {
+    order: 1;
+  }
+
+  &:nth-child(2) {
+    order: 2;
+  }
+
+  &:nth-child(3) {
+    order: 3;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 360px;
+    height: 210px;
   }
 }
+
 
 .carousel__el span {
   position: absolute;
@@ -39,11 +66,32 @@
   font-family: $text-font-redhat;
   font-size: 32px;
   line-height: 42px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 26px;
+    top: 8px;
+    bottom: 176px;
+  }
 }
 
 .destinations__pagination {
   margin: 24px auto 40px;
   display: flex;
+
+  @media (max-width:$mobile-width) {
+    display: none;
+  }
+}
+
+.destinations__pagination--mobile {
+  display: none;
+
+  @media (max-width:$mobile-width) {
+    display: flex;
+    position: absolute;
+    bottom: 12px;
+  }
 }
 
 .pagination__dot {
@@ -57,4 +105,56 @@
   &--current {
     background: rgba(242, 120, 92, 1);
   }
+
+  @media (max-width:$mobile-width) {
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+  }
+}
+
+.carousel__img--mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.carousel__img {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.carousel-hidden {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.arrow-left-mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    position: absolute;
+    bottom: 92.5px;
+    left: 26px;
+  }
+}
+
+.arrow-right-mobile {
+  display: none;
+  
+  @media (max-width: $mobile-width) {
+    display: block;
+        position: absolute;
+    bottom: 92.5px;
+    right: 26px;
+  }
+}
+
+.arrow-mobile--disabled {
+  opacity: 0.5;
 }

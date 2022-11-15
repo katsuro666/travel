@@ -62,6 +62,13 @@
 .destinations__button {
   width: 228px;
   height: 59px;
+  
+
+  @media (max-width: $mobile-width) {
+    width: 92px;
+    height: 30px;
+    margin-top: 10px;
+  }
 }
 
 .button-container {
@@ -69,10 +76,30 @@
   
   & object {
     margin: 9.5px 10px 9.5px 26px;
+
+    @media (max-width: $mobile-width) {
+      margin: 10px 6px 10px;
+      width: 10px;
+      height: 10px;
+    }
   }
 
   & p {
     margin: 13.5px auto 13.5px 0;
+    font-size: 24px;
+    line-height: 32px;
+    
+
+    @media (max-width: $mobile-width) {
+      margin: 7.5px 12px 7.5px 0;
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 92px;
+    height: 30px;
   }
 }
 
