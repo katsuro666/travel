@@ -10,6 +10,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   padding: 25px 45px;
+  transition: transform 0.3s ease-out;
+
+
 
   @media (max-width: $mobile-width) {
     width: 300px;
@@ -147,5 +150,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: background-color 2s ease;
-  }
+  transition: background-color 1s ease;
+}
+
+.popup-bg-hidden {
+  width: 0;
+  height: 0;
+}
+
+.popup-hidden {
+  // display: none;
+  transition: transform 0.3s ease-in;
+  transform: translateY(-250%);
+
+}

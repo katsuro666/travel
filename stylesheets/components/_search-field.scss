@@ -25,11 +25,11 @@
   line-height: 29px;
   border-radius: 16px;
   font-style: italic;
-  transition: background-color 2s, color 2s, font-style 5s;
+  transition: background-color 0.5s, color 0.5s, font-style 1s;
 
   &::placeholder {
     color: $brand-color;
-    transition: color 2s, font-style 3s;
+    transition: color 0.5s, font-style 1s;
   }
 
   &:focus {

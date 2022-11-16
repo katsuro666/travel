@@ -22,11 +22,11 @@
   'layout/destinations',
   'layout/travel-stories',
   'layout/footer',
-  'layout/burger-menu',
   'layout/popup-login',
   'layout/popup-signup';
-
-// 5. Components
-@import
+  
+  // 5. Components
+  @import
   'components/button',
-  'components/search-field';
+  'components/search-field',
+  'components/burger-menu';
