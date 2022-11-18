@@ -37,6 +37,8 @@ burgerLoginBtn.addEventListener('click', (e) => {
   toggleMenu()
 });
 
+// ============
+
 
 let loginBtn = document.querySelector('.login-button');
 let loginPopupWrapper = document.querySelector('.popup__wrapper');
@@ -66,3 +68,41 @@ popupAccountLink.forEach(element => {
     signupPopup.classList.toggle('popup-hidden')    
   })
 });
+
+// ===========
+
+let userLoginEmail = document.getElementById('login-email').value;
+let userLoginPassword = document.getElementById('login-password').value;
+let userSignupEmail = document.getElementById('signup-email').value;
+let userSignupPassword = document.getElementById('signup-password').value;
+let signInBtn = document.querySelector('.sign-in-button');
+let signUpBtn = document.querySelector('.sign-up-button');
+
+signInBtn.addEventListener('click', (e) => {
+  checkLogIn()
+})
+signUpBtn.addEventListener('click', (e) => {
+  checkSignUp()
+})
+
+function checkLogIn() {
+  let email = document.getElementById("login-email").value;
+  let pass = document.getElementById("login-password").value;
+
+  if (email === '' || pass === '') {
+    alert('Please fill out the fields.')
+  } else {
+    alert (`Yor email: ${email}. \n Your password: ${pass}`);
+  }
+
+}
+function checkSignUp() {
+  let email = document.getElementById("signup-email").value;
+  let pass = document.getElementById("signup-password").value;
+  
+  if (email === '' || pass === '') {
+    alert('Please fill out the fields.')
+  } else {
+    alert (`Yor email: ${email}. \n Your password: ${pass}`);
+  }
+}

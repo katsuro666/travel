@@ -75,7 +75,9 @@
               <li class="burger-menu__el">
                 <a href="#travel-stories">Travel Stories</a>
               </li>
-              <li class="burger-menu__el"><a class="burger-login" href="#">Account</a></li>
+              <li class="burger-menu__el">
+                <a class="burger-login" href="#">Account</a>
+              </li>
               <li class="burger-menu__el">
                 <a href="#footer">Social Media</a>
               </li>
@@ -130,9 +132,8 @@
 
     <section class="destinations" id="destinations">
       <h2>Popular destinations</h2>
-
-      <div class="destinations__carousel">
-        <div class="carousel__el">
+      <div class="slider">
+        <div class="slider__item">
           <img
             src="images/Spain.jpg"
             alt="Sea of Spain"
@@ -145,7 +146,7 @@
           <span>Spain</span>
         </div>
 
-        <div class="carousel__el carousel-hidden">
+        <div class="slider__item">
           <img
             src="images/Japan.jpg"
             alt="Japan landscapes"
@@ -158,7 +159,7 @@
           <span>Japan</span>
         </div>
 
-        <div class="carousel__el carousel-hidden">
+        <div class="slider__item">
           <img
             src="images/USA.jpg"
             alt="The Golden Gate bridge"
@@ -170,28 +171,6 @@
             class="carousel__img--mobile" />
           <span>USA</span>
         </div>
-
-        <div class="destinations__pagination--mobile">
-          <div class="pagination__dot pagination__dot--current"></div>
-          <div class="pagination__dot"></div>
-          <div class="pagination__dot"></div>
-        </div>
-
-        <img
-          src="icons/destinations__arrow-left.svg"
-          alt=""
-          class="arrow-left-mobile arrow-mobile--disabled" />
-
-        <img
-          src="icons/destinations__arrow-right.svg"
-          alt=""
-          class="arrow-right-mobile" />
-      </div>
-
-      <div class="destinations__pagination">
-        <div class="pagination__dot"></div>
-        <div class="pagination__dot pagination__dot--current"></div>
-        <div class="pagination__dot"></div>
       </div>
 
       <button class="button destinations__button">
@@ -350,7 +329,9 @@
             <label for="login-password">Password</label>
             <input type="password" id="login-password" />
 
-            <button class="button popup__form-button">Sign In</button>
+            <button class="button popup__form-button sign-in-button">
+              Sign In
+            </button>
 
             <a href="#" class="popup__form-forgot">Forgot Your Password?</a>
           </div>
@@ -359,7 +340,9 @@
 
           <span class="popup__prompt">
             Don’t have an account?
-            <a class="highlighted-link login__account-link" href="#">Register</a>
+            <a class="highlighted-link login__account-link" href="#">
+              Register
+            </a>
           </span>
         </div>
       </div>
@@ -371,15 +354,17 @@
           <div class="popup__form">
             <div class="form-email">
               <label for="signup-email">E-mail</label>
-              <input type="email" id="signup-email" />
+              <input type="email" id="signup-email" required />
             </div>
 
             <div class="form-password">
               <label for="signup-password">Password</label>
-              <input type="password" id="signup-password" />
+              <input type="password" id="signup-password" required />
             </div>
 
-            <button class="button popup__form-button">Sign Up</button>
+            <button class="button popup__form-button sign-up-button">
+              Sign Up
+            </button>
           </div>
 
           <div class="popup-line"></div>
@@ -392,6 +377,9 @@
       </div>
     </div>
 
-    <script src="/script/popup-and-burger.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="script/slick.min.js"></script>
+    <script src="script/slider.js"></script>
+    <script src="script/popup-and-burger.js"></script>
   </body>
 </html>

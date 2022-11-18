@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 0;
 }
 
 .destinations h2 {
@@ -14,38 +15,30 @@
   }
 }
 
-.destinations__carousel {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  overflow: hidden;
-  width: 100%;
+.carousel__img--mobile {
+  display: none;
 
   @media (max-width: $mobile-width) {
-      width: 390px;
-    }
+    display: block;
+  }
 }
 
-.carousel__el {
+.carousel__img {
+  transition: all ease 1s;  
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.slider__item {
   position: relative;
-  margin-right: 60px;
   width: 800px;
-  height: 800px;    
+  height: 800px; 
+  transition: all ease 1s;  
 
   & img {
-    border-radius: 16px;
-  }
-
-  &:nth-child(1) {
-    order: 1;
-  }
-
-  &:nth-child(2) {
-    order: 2;
-  }
-
-  &:nth-child(3) {
-    order: 3;
+    border-radius: 16px; 
   }
 
   @media (max-width: $mobile-width) {
@@ -56,8 +49,7 @@
   }
 }
 
-
-.carousel__el span {
+.slider__item span {
   position: absolute;
   left: 15px;
   bottom: 40px;
@@ -73,88 +65,4 @@
     top: 8px;
     bottom: 176px;
   }
-}
-
-.destinations__pagination {
-  margin: 24px auto 40px;
-  display: flex;
-
-  @media (max-width:$mobile-width) {
-    display: none;
-  }
-}
-
-.destinations__pagination--mobile {
-  display: none;
-
-  @media (max-width:$mobile-width) {
-    display: flex;
-    position: absolute;
-    bottom: 12px;
-  }
-}
-
-.pagination__dot {
-  margin-right: 10px;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  background: rgba(242, 120, 92, 0.5);
-  border-radius: 50%;
-
-  &--current {
-    background: rgba(242, 120, 92, 1);
-  }
-
-  @media (max-width:$mobile-width) {
-    width: 8px;
-    height: 8px;
-    margin-right: 6px;
-  }
-}
-
-.carousel__img--mobile {
-  display: none;
-
-  @media (max-width: $mobile-width) {
-    display: block;
-  }
-}
-
-.carousel__img {
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-}
-
-.carousel-hidden {
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-}
-
-.arrow-left-mobile {
-  display: none;
-
-  @media (max-width: $mobile-width) {
-    display: block;
-    position: absolute;
-    bottom: 92.5px;
-    left: 26px;
-  }
-}
-
-.arrow-right-mobile {
-  display: none;
-  
-  @media (max-width: $mobile-width) {
-    display: block;
-        position: absolute;
-    bottom: 92.5px;
-    right: 26px;
-  }
-}
-
-.arrow-mobile--disabled {
-  opacity: 0.5;
 }
