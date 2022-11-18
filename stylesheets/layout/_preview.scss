@@ -4,10 +4,9 @@
   height: 765px;
 
   @media (max-width: $mobile-width) {
-    background-image: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(../images/preview-bg--mobile.jpg);
+    background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(../images/preview-bg--mobile.jpg);
     background-size: cover;
     height: 251px;
-    width: 390px;
   }
 }
 
